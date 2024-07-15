@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+form {
+  max-width: 600px;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #ffc0cb;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 10px;
+}
+
+legend {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+input[type="range"] {
+  width: calc(100% - 20px);
+  margin: 0 10px;
+}
+
+input[type="submit"] {
+  width: auto;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: auto;
+  border-radius: 4px;
+  border-color: #e2b8cb;
+  background-color: #e4a1c1;
+  color: white;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+input[type="submit"]:hover {
+  background-color: #ffffff;
+  color: #e4a1c1;
+}
+
+a {
+  color: #7f3667;
+}
+
+a:visited {
+  color: white;
+}

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Future Tech Trends Preferences</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1 id="title">Future Tech Trends Preferences</h1>
+    <p id="description">
+      Thank you for taking the time to tell us your future tech trends
+      preferences!
+    </p>
+    <form id="survey-form" action="/submit-survey" method="post">
+      <fieldset>
+        <div>
+          <label id="name-label" for="name"
+            >Name
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Enter your name"
+              required
+          /></label>
+        </div>
+        <div>
+          <label id="email-label" for="email"
+            >Email
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Enter your email"
+              required
+          /></label>
+        </div>
+        <div>
+          <label id="number-label" for="age"
+            >Age (optional)
+            <input
+              id="number"
+              name="age"
+              type="number"
+              placeholder="Age"
+              min="16"
+              max="120"
+          /></label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend for="dropdown">Which best describes your current role?</legend>
+        <select id="dropdown" name="current-role" required>
+          <option value="" disabled selected>Select current role</option>
+          <option value="student">Student</option>
+          <option value="professional">Professional</option>
+          <option value="self-employed">Self-Employed</option>
+          <option value="unemployed">Unemployed</option>
+          <option value="retired">Retired</option>
+          <option value="undefined">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>
+          Which of the following emerging technologies is your favorite?
+        </legend>
+        <div>
+          <label for="ai"
+            ><input
+              id="ai"
+              type="radio"
+              name="favorite-tech"
+              value="ai"
+              checked
+            />
+            Artificial Intelligence</label
+          >
+        </div>
+        <div>
+          <label for="reality"
+            ><input
+              id="reality"
+              type="radio"
+              name="favorite-tech"
+              value="reality"
+            />
+            Augmented Reality / Virtual Reality</label
+          >
+        </div>
+        <div>
+          <label for="blockchain"
+            ><input
+              id="blockchain"
+              type="radio"
+              name="favorite-tech"
+              value="blockchain"
+            />
+            Blockchain</label
+          >
+        </div>
+        <div>
+          <label for="quantum"
+            ><input
+              id="quantum"
+              type="radio"
+              name="favorite-tech"
+              value="quantum"
+            />
+            Quantum Computing</label
+          >
+        </div>
+        <div>
+          <label for="internet"
+            ><input
+              id="internet"
+              type="radio"
+              name="favorite-tech"
+              value="internet"
+            />
+            Internet of Things</label
+          >
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>
+          Which of the following technologies do you currently use? (Select all
+          that apply)
+        </legend>
+        <div>
+          <label
+            ><input
+              type="checkbox"
+              id="smart-home"
+              name="tech-usage"
+              value="smart-home"
+            />
+            Smart Home Devices</label
+          >
+        </div>
+        <div>
+          <label
+            ><input
+              type="checkbox"
+              id="wearable-tech"
+              name="tech-usage"
+              value="wearable-tech"
+            />
+            Wearable Tech</label
+          >
+        </div>
+        <div>
+          <label
+            ><input
+              type="checkbox"
+              id="cryptocurrencies"
+              name="tech-usage"
+              value="cryptocurrencies"
+            />
+            Cryptocurrencies</label
+          >
+        </div>
+        <div>
+          <label
+            ><input
+              type="checkbox"
+              id="auto-vehicles"
+              name="tech-usage"
+              value="auto-vehicles"
+            />
+            Autonomous Vehicles</label
+          >
+        </div>
+        <div>
+          <label
+            ><input
+              type="checkbox"
+              id="drones"
+              name="tech-usage"
+              value="drones"
+            />
+            Drones</label
+          >
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend for="investment">
+          How likely are you to invest in emerging technologies?
+        </legend>
+        <select id="investment" name="investment" required>
+          <option value="" disabled selected>Select</option>
+          <option value="very-likely">Very Likely</option>
+          <option value="likely">Likely</option>
+          <option value="neutral">Neutral</option>
+          <option value="unlikely">Unlikely</option>
+          <option value="very-unlikely">Very Unlikely</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>
+          Which of the following tech events do you prefer to attend? (Select
+          all that apply)
+        </legend>
+        <div>
+          <label
+            ><input type="checkbox" id="ces" name="tech-event" value="ces" />
+            CES (Consumer Electronics Show)</label
+          >
+        </div>
+        <div>
+          <label
+            ><input
+              type="checkbox"
+              id="websummit"
+              name="tech-event"
+              value="websummit"
+            />
+            WebSummit</label
+          >
+        </div>
+        <div>
+          <label
+            ><input
+              type="checkbox"
+              id="techcrunch"
+              name="tech-event"
+              value="techcrunch"
+            />
+            TechCrunch Disrupt</label
+          >
+        </div>
+        <div>
+          <label
+            ><input
+              type="checkbox"
+              id="google"
+              name="tech-event"
+              value="google"
+            />
+            Google I/O</label
+          >
+        </div>
+        <div>
+          <label
+            ><input
+              type="checkbox"
+              id="apple"
+              name="tech-event"
+              value="apple"
+            />
+            Apple WWDC</label
+          >
+        </div>
+      </fieldset>
+      <fieldset>
+        <label for="impact"
+          >On a scale, how much do emerging technologies impact your daily
+          life?<input
+            type="range"
+            id="impact"
+            name="impact"
+            min="1"
+            max="5"
+            step="1"
+            value="impact"
+        /></label>
+      </fieldset>
+      <fieldset>
+        <label for="comments"
+          >Please provide any additional comments or thoughts on future tech
+          trends!<textarea
+            id="comments"
+            name="comments"
+            rows="3"
+            cols="30"
+            value="comments"
+            placeholder="I think..."
+          ></textarea>
+        </label>
+      </fieldset>
+      <label for="terms-and-conditions"
+        ><input
+          id="terms-and-conditions"
+          type="checkbox"
+          value="terms-and-conditions"
+          required
+        />I accept the
+        <a href="terms and conditions"> terms and conditions</a>.</label
+      >
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
