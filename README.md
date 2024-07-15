@@ -21,8 +21,7 @@ To view or use the survey form, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/aneesamehmood/-fcc-survey-form.git
+   git clone https://github.com/aneesamehmood/fcc-survey-form.git
 
 ## Acknowledgements
-
-    freeCodeCamp for providing the project guidelines and resources.
+   freeCodeCamp for providing the project guidelines and resources.
